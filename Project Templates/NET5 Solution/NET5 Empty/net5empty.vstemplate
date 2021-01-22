@@ -13,6 +13,10 @@
     <LanguageTag>C#</LanguageTag>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="$safeprojectname$.csproj" File="$safeprojectname$.csproj" ReplaceParameters="true" />
+    <Project TargetFileName="$safeprojectname$.csproj" File="$safeprojectname$.csproj" ReplaceParameters="true">
+        <Folder Name="Properties" TargetFolderName="Properties">
+            <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        </Folder>
+    </Project>
   </TemplateContent>
 </VSTemplate>
