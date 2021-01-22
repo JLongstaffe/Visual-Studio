@@ -1,0 +1,19 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>NET5 Solution</Name>
+        <Description>An empty .NET 5 project and a .NET 5 test project</Description>
+        <ProjectType>CSharp</ProjectType>
+        <LanguageTag>C#</LanguageTag>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink ProjectName="$safeprojectname$">
+                NET5 Empty\net5empty.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Tests">
+                NET5 Test\net5test.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
